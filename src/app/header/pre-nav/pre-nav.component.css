@@ -1,4 +1,34 @@
-.fb-login,
-.fb-phone {
-    padding: 0;
+.pre-nav {
+    padding: 15px 0;
+    color: #fff !important;
+    margin-bottom: 0;
 }
+
+.pre-nav a {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.pre-nav a:hover {
+    color: #9bb9d0;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #9bb9d0;
+}
+
+.pre-nav i {
+    vertical-align: text-bottom;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+

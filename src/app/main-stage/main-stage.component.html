@@ -1,4 +1,58 @@
-<p>
-  main-stage works!
-</p>
-<mat-checkbox>Check me!</mat-checkbox>
+<div class="row main-stage">
+  <h1>File A Claim</h1>
+</div>
+
+<div class="mod-content">
+  <div id="steps" class="hide-on-med-and-down">
+    <ul id="progressbar">
+      <li class="active"><span>1</span><span>When Did<br> Event Occur</span></li>
+      <li><span>2</span><span>What's Damaged</span></li>
+      <li><span>3</span><span>What Happened</span></li>
+      <li><span>4</span><span>Uploads</span></li>
+      <li><span>5</span><span>Contact Details</span></li>
+      <li><span>6</span><span>Review and File</span></li>
+    </ul>
+  </div>
+
+  <div style="padding: 50px;">
+    <p class="field1-std">GET STARTED</p>
+    <hr class="field2-std">
+
+    <div class="" style="margin: 0 auto;">
+      <h3 class="center-align" style="font-size: 1.1em; color: #2a6a97; margin: 20px 0 14px 0 !important; font-weight: 400;">When did the incident occur?</h3>
+      <!-- <div class="formErrorBlock alert alert-danger ng-binding ng-hide" ng-show="formError"></div> -->
+
+      <div class="input-field date fb-input-field-centered" id="autoincidentdate" style="margin-bottom: 20px;">
+        <i class="material-icons prefix">calendar_today</i>
+        <input type="text" class="browser-default ng-pristine ng-valid ng-valid-required fb-input" placeholder="MM-DD-YYYY" control="autoincidentdate" id="autoincidentdate" name="autoincidentdate" format="MM-DD-YYYY" data-ng-model="api.basicinfo.lossDate" ng-class="{ 'error-field' : forms.autoFrmBasicDesc.autoincidentdate.$invalid &amp;&amp; forms.autoFrmBasicDesc.autoincidentdate.$dirty}" bootstrapdate="" required="">
+        
+      </div>
+
+      <div class="text-warning validation " ng-class="{'val-show': forms.autoFrmBasicDesc.autoincidentdate.$invalid &amp;&amp; basicClaimInfo.submitClicked}">
+        <span class="glyphicon glyphicon-exclamation-sign"></span>
+      </div>
+
+
+      <!--                         <div>tiemvalue: {{api.basicinfo.lossTime}}</div>
+          <div>tiemvalue: {{api.basicinfo.lossTime_unformatted}}</div> -->
+      <div class="input-field timepicker fb-input-field-centered">
+        <i class="material-icons prefix">alarm</i>
+        <input bootstraptime1="" type="text" class="browser-default form-control input-small ng-pristine ng-valid fb-input" placeholder="HH:MM AM" control="startTime1" id="startTime1" ng-model="api.basicinfo.lossTime_unformatted" ng-class="{ 'error-field' : forms.autoFrmBasicDesc.startTimeName.$invalid &amp;&amp; forms.autoFrmBasicDesc.startTimeName.$dirty}">
+        
+      </div>
+
+      <div class="row" style="margin-top: 40px;">
+        <div class="col s12 center-align">
+          <a class="waves-effect waves-light"><img src="../../../assets/img/continue.png" style="border-radius: 5px;" alt="Farm Bureau Insurance"></a>
+        </div>
+      </div>
+      
+
+    </div>
+
+
+  </div>
+</div>
+
+
+

@@ -1,8 +1,26 @@
 nav {
     background: linear-gradient(to bottom, #E21F1D 0%, #BC1817 40%, #A61414 100%) !important;
-    height: 84px;
+    height: 87px;
     padding: 0;
     border-radius: 5px;
+}
+
+.sidenav {
+    background: linear-gradient(to bottom, #E21F1D 0%, #BC1817 40%, #A61414 100%) !important;
+    font-size: 16px;
+    
+}
+
+.sidenav li>a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+    text-shadow: 0 -1px 1px #000000;
+    letter-spacing: 1px;
 }
 
 nav li {
@@ -20,7 +38,8 @@ nav li {
     color: #fff;
     display: inline-block;
     font-size: 2.1rem;
-    padding: 0 1.5em 0 .25em;
+    padding:.1em .25em 0 .375em;
+    max-height: 83px;
 }
 
 @media only screen and (max-width: 992px) {

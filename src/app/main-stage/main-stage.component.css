@@ -1,0 +1,139 @@
+.main-stage h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.17;
+    text-align: left;
+    color: #fff;
+    margin: 15px 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.main-stage {
+    margin-bottom: 0;
+}
+
+.mod-content {
+    border-radius: 5px;
+    background-clip: padding-box;
+    background: #fff;
+    /* height: 400px; */
+    margin-bottom: 40px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1) !important;
+}
+
+#steps {
+    background-image: linear-gradient(#56748b, #1a3447);
+    height: 111.2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0;
+
+    margin: 0 auto 5px auto;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    background-color: #edeaea;
+    margin-bottom: 0;
+}
+
+#progressbar li {
+    display: block;
+    float: left;
+    width: 12.5%;
+    height: 111px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #9bb9d0;
+}
+
+#progressbar li.active {
+    background-image: linear-gradient(to bottom, rgba(28, 53, 72, 0), #14232e);
+    color: white;
+}
+
+#progressbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 0;
+}
+
+#progressbar li span:first-child {
+    border-radius: 15px;
+    background-clip: padding-box;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #9bb9d0;
+    text-align: center;
+    line-height: 24px;
+    margin: 15px auto;
+    color: #314f66;
+    font-weight: bold;
+}
+
+#progressbar li.active span:first-child {
+    color: white;
+    background-color: #dc180c;
+}
+
+#progressbar li span:nth-child(2) {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #9bb9d0;
+    padding: 0 10px;
+    line-height: 1.3;
+}
+
+#progressbar li.active span:nth-child(2) {
+    color: #fff;
+}
+
+/* ===============
+   MISCELLANEOUS 
+   =============== */
+   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 10pt;
+    font-weight: 700;
+    position: absolute;
+    top: 38px;
+    display: inline-block;
+    padding: 0 0 0 10px;
+    cursor: pointer;
+    color: #6B6868;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red !important;
+}  
+
+.field1-std {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #dc180c;
+}
+
+.field2-std {
+    width: 36px;
+    border: 2px solid #e4e4e4;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.fa-bars {
+    color: white !important;
+    font-size: 1.25em;
+    padding-top: 2px;
+}

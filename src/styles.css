@@ -2,16 +2,60 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+body {
+    font-family: "Droid Sans Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url(assets/img/Farmscape.jpg);
+    background-repeat:  no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
 #main {
     display: flex;
     flex-direction: column;
     height: 100vh;
 
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 app-footer {
     margin-top: auto;
+}
+
+.fb-input-field-centered {
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+.input-field .prefix ~ input, .input-field .prefix ~ textarea, .input-field .prefix ~ label, .input-field .prefix ~ .validate ~ label, .input-field .prefix ~ .helper-text, .input-field .prefix ~ .autocomplete-content {
+    margin-left: 0;
+    width: 100%;
+}
+
+.input-field .prefix {
+    position: absolute;
+    width: 3rem;
+    font-size: 1.5rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    top: .45rem;
+    right: 0;
+    color: #6B6868;
+}
+
+.fb-input {
+    height: 36px;
+    margin: 0;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #EEEEEE;
+    background: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), to(#CCCCCC));
+    background: -webkit-linear-gradient(top, #EEEEEE 0%, #CCCCCC 100%);
+    background: -o-linear-gradient(top, #EEEEEE 0%, #CCCCCC 100%);
+    background: linear-gradient(to bottom, #EEEEEE 0%, #CCCCCC 100%);
+    border-style: none;
 }
 
 
@@ -21,6 +65,12 @@ app-footer {
     }
 }
 
+@media only screen and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(#254358, #fff);
+    }
+}   
+
 @media only screen and (max-width: 600px) {
     .container {
         width: 95%;
@@ -28,5 +78,20 @@ app-footer {
 
     .fb-phone {
         text-align: center;
+    }
+
+    .fb-terms {
+        text-align: left;
+        padding: 0 !important;
+    }
+
+    .fb-terms p {
+        text-align: left;
+        margin: 0 !important;
+    }
+
+    .fb-copy p {
+        text-align: left;
+        margin-bottom: 3px !important;
     }
 }
